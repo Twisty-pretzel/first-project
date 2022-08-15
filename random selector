@@ -1,47 +1,29 @@
- 
-from ast import If
-from pickle import FALSE, TRUE
-import random
-from telnetlib import X3PAD
-import time
-b = FALSE
-x1 ='there is a new Game update, would you like to hear about it?'
-x2 ='Good morning tell me something i don't know about you'
+ import random
+x1 ='there is a new alexa update, would you like to hear about it?'
+x2 ='Good morning tell me something i dont know about you'
 x3 ='have you been working on anything exciting lately?'
-x4 ='can you tell me something about what you're working on?'
+x4 ='can you tell me something about what youre working on?'
 x5 ='What was the highlight of your week?'
 x6 ='Are you having a good day today?'
 x7 ='Any plans for the weekend?'
 x8 ='How is work going?'
 x9 ='Is there anything you are interested in learning?'
- 
-if b == TRUE:
-    print(x1)
-else: exit()
- 
-if time <1200 >0000:
-    print(random.randint(2,9))
-    if random.randint == 2:
+rand_num = random.randint(2,9)
+print(rand_num)
+if rand_num == 2:
         print(x2)
-		exit()
-    if random.randint == 3:
+if rand_num == 3:
         print(x3)
-		exit()
-    if random.randint == 4:
+if rand_num == 4:
         print(x4)
-		exit()
-    if random.randint == 5:
+if rand_num == 5:
         print(x5)
-		exit()
-    if random.randint == 6:
+if rand_num == 6:
         print(x6)
-		exit()
-    if random.randint == 7:
+if rand_num == 7:
         print(x7)
-		exit()
-    if random.randint == 8:
-        print(x8)
-		exit()
-    if random.randint == 9:
+if rand_num == 8:
+        print(x4)
+if rand_num == 9:
         print(x9)
-		exit()
+exit()
